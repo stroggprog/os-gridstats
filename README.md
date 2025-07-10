@@ -1,6 +1,9 @@
 # os-gridstats
 returns status info for the current grid in a variety of formats
 
+**Version**: `1.0.2`
+**WARNING**: Requires backend access to the grid database!
+
 ## About
 Fetches data about the current status of the grid and stats from the last 30 days. By default it will return the data in JSON format, but can return the data in a variety of formats:
 - json
@@ -35,6 +38,7 @@ This sample is in JSON format.
     "single_regions": 9,
     "var_regions": 2,
     "total_size_sq_meters": 23658496,
+    "total_size_sq_km": 23.658496,
     "hg_visitors_last_30_days": 22,
     "hg_visitors_online_now": 0,
     "registered_users": 9,

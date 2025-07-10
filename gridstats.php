@@ -8,7 +8,7 @@ define("GRID_STATS",    "https://mossgrid.uk/gridstats");
 
 // == don't edit below here == //
 
-define("SRC_VERSION", "1.0.1");
+define("SRC_VERSION", "1.0.2");
 
 
 include_once("lib/db_mysql.php");
@@ -65,6 +65,8 @@ $result["var_regions"] = (int) $r->c;
 $r = $db->exec_as_obj("select sum(sizeX) as c from regions");
 $size = (int) $r->c;
 $result["total_size_sq_meters"] = $size * $size;
+$size = $size/1000;
+$result["total_size_sq_km"] = $size * $size;
 
 $r = $db->exec_as_obj("select count(*) as c from GridUser WHERE `Logout`>$oneMonth and UserID like '%http%'");
 $result["hg_visitors_last_30_days"] = (int) $r->c;
