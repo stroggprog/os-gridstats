@@ -25,7 +25,7 @@ Edit `lib/db_params.php' to reflect your own database parameters. Change the sec
 define( "SECRET", "" );
 ```
 
-If you are using the proxy script on an external website, edit it to change the address it will call.
+If you are using the proxy script on an external website, edit it to change the address it will call. The proxy script also requires `lib/params.php` and `lib/sendMessage.php`.
 
 ## Sample Output
 This sample is in JSON format.
