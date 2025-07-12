@@ -2,6 +2,7 @@
 returns status info for the current grid in a variety of formats
 
 **Version**: `1.0.4`
+
 **WARNING**: Requires backend access to the grid database!
 
 ## About
