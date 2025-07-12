@@ -8,7 +8,7 @@ define("GRID_STATS",    "https://mossgrid.uk/gridstats");
 
 // == don't edit below here == //
 
-define("SRC_VERSION", "1.0.3");
+define("SRC_VERSION", "1.0.4");
 
 
 include_once("lib/db_mysql.php");
